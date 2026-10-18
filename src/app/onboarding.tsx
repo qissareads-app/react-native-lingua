@@ -11,7 +11,7 @@ export default function Onboarding() {
           <Image
             source={images.mascotLogo}
             resizeMode="contain"
-            style={{ width: 40, height: 40 }}
+            className="h-10 w-10"
           />
           <Text className="text-h2 text-text-primary">Qissalingo</Text>
         </View>
@@ -40,7 +40,7 @@ export default function Onboarding() {
             <Image
               source={images.mascotWelcome}
               resizeMode="contain"
-              style={{ width: 256, height: 256 }}
+              className="h-72 w-72"
             />
           </View>
         </View>

@@ -171,7 +171,19 @@ Use these assets properly in the UI.
 
 ## Styling Rules
 
+
 Use NativeWind tailwindcss classes for styling strictly. Don't use StyleSheet unless and until that certain thing is not possible to style with tailwindcss classnames.
+
+### Style Exception List
+Use StyleSheet or inline styles only for:
+- SafeAreaView (className not supported)
+- KeyboardAvoidingView (behavior props)
+- Modal (visible, transparent props)
+- Animated.View (animated style values)
+- Dynamic styles calculated at runtime
+- Shadows (different per platform)
+
+Text, Image, View, Pressable and all other components must use className.
 
 Prioritize clean, readable mobile UI.
 
